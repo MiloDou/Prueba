@@ -5,7 +5,9 @@
     {
         Console.Clear();
         Console.WriteLine("---------------------------");
+        Console.ForegroundColor = ConsoleColor.Green;
         Console.WriteLine("        CALCULATOR");
+        Console.ForegroundColor = ConsoleColor.White;
         Console.WriteLine("---------------------------\n");
         int option;
         Console.WriteLine("1. Add");
