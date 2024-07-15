@@ -1,4 +1,4 @@
-﻿while(true)
+﻿while (true)
 {
 
     try
@@ -6,21 +6,22 @@
         Console.Clear();
         Console.WriteLine("---------------------------");
         Console.ForegroundColor = ConsoleColor.Green;
-        Console.WriteLine("        CALCULATOR");
+        Console.WriteLine("        CALCULATOR ");
         Console.ForegroundColor = ConsoleColor.White;
         Console.WriteLine("---------------------------\n");
         int option;
-        Console.WriteLine("1. Add");
+        Console.WriteLine("1. Adddddddddddddddddd");
         Console.WriteLine("2. Sub");
         Console.WriteLine("3. Multiplicate");
         Console.WriteLine("4. Divide");
         Console.Write("Choose a option: ");
         option = Convert.ToInt32(Console.ReadLine());
-       
-        switch(option)
+
+        switch (option)
         {
 
-            case 1: {
+            case 1:
+                {
                     while (true)
                     {
                         try
@@ -62,11 +63,13 @@
                         }
                         Console.ReadKey();
                     }
-                   
-                
-                
-                }break;
-            case 2: {
+
+
+
+                }
+                break;
+            case 2:
+                {
                     while (true)
                     {
                         try
@@ -87,7 +90,7 @@
 
                             resultSub = number - number1;
                             Console.WriteLine("   " + number);
-                            Console.WriteLine("-  "+number1);
+                            Console.WriteLine("-  " + number1);
                             Console.WriteLine("----------------");
                             Console.WriteLine("   " + resultSub);
 
@@ -115,7 +118,8 @@
 
                 }
                 break;
-            case 3: {
+            case 3:
+                {
                     while (true)
                     {
                         try
@@ -126,7 +130,7 @@
                             Console.WriteLine("       MULTIPLICATE");
                             Console.ForegroundColor = ConsoleColor.White;
                             Console.WriteLine("---------------------------\n");
-                            int resultMultiplicate ;
+                            int resultMultiplicate;
                             int number;
                             int number1;
                             Console.Write("Write a number: ");
@@ -163,7 +167,8 @@
 
                 }
                 break;
-                case 4: {
+            case 4:
+                {
                     while (true)
                     {
                         try
@@ -199,13 +204,13 @@
                         catch (DivideByZeroException CatchMessage)
                         {
                             Console.ForegroundColor = ConsoleColor.Red;
-                            Console.WriteLine("\n"+CatchMessage.Message);
+                            Console.WriteLine("\n" + CatchMessage.Message);
                             Console.ForegroundColor = ConsoleColor.White;
                         }
-                        catch ( OverflowException CatchMessage1)
+                        catch (OverflowException CatchMessage1)
                         {
                             Console.ForegroundColor = ConsoleColor.Red;
-                            Console.WriteLine("\n"+CatchMessage1.Message);
+                            Console.WriteLine("\n" + CatchMessage1.Message);
                             Console.ForegroundColor = ConsoleColor.White;
                         }
                         Console.ReadKey();
@@ -216,12 +221,12 @@
                 }
                 break;
 
-        }    
+        }
 
 
 
     }
-    catch(FormatException ex)
+    catch (FormatException ex)
     {
         Console.ForegroundColor = ConsoleColor.Red;
         Console.WriteLine("\n Format in valid");
